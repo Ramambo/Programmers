@@ -7,14 +7,8 @@ public class Solution {
         
         for(int i=0; i<a.length(); i++){
             char ch = a.charAt(i);
-            if(Character.isUpperCase(ch)){
-                ch = Character.toLowerCase(ch);
-                System.out.print(ch);
-            }
-            else{
-                ch = Character.toUpperCase(ch);
-                System.out.print(ch);
-            }
+            ch = Character.isUpperCase(ch) ? Character.toLowerCase(ch) : Character.toUpperCase(ch);
+            System.out.print(ch);
         }
         
     }
