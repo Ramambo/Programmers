@@ -1,15 +1,14 @@
 class Solution {
     public int[] solution(String[] park, String[] routes) {
-        // 공원의 크기 정의
-        int rows = park.length;
-        int cols = park[0].length();
-
         // 공원을 2차원 배열로 변환
-        char[][] park2 = new char[rows][];
-        for (int i = 0; i < rows; i++) {
+        char[][] park2 = new char[park.length][];
+        for (int i = 0; i < park.length; i++) {
             // 각 문자열을 문자 배열로 변환하여 2차원 배열의 한 행으로 설정
             park2[i] = park[i].toCharArray();
         }
+        // 공원 크기 정의
+        int rows = park2.length;
+        int cols = park2[0].length;
 
         // 시작 위치 찾기
         int x = 0, y = 0;
