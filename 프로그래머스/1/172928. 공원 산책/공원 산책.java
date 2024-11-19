@@ -31,7 +31,6 @@ class Solution {
         };
         String[] directionKeys = {"N", "S", "E", "W"};
 
-        // 명령어 처리
         for (String route : routes) {
             String[] parts = route.split(" ");
             String dir = parts[0];
