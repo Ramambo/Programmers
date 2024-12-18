@@ -7,13 +7,9 @@ class Solution {
             arrayProduct *= i;
             sum += i;
         }
+        int answer = Math.pow(sum,2) > arrayProduct ? 1:0;
         
-        int productSum =  (int)Math.pow(sum,2); // 모든 원소들의 합의 제곱
+        return answer;
         
-        if(arrayProduct > productSum){
-            return 0;
-        }else{
-            return 1;
-        }
     }
 }
