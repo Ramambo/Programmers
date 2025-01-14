@@ -5,6 +5,6 @@ class Solution {
 //         int num = mlength - n;
 //         return my_string.substring(num,mlength);
         
-        return my_string.substring(my_string.length()-n, my_string.length());
+        return my_string.substring(my_string.length()-n);
     }
 }
