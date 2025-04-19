@@ -8,7 +8,6 @@ public class Main {
         word = word.toLowerCase();
         int[] freq = new int[26];
         
-        
         for (int i = 0; i < word.length(); i++) {
             char c = word.charAt(i);
             if (c >= 'a' && c <= 'z') {
@@ -16,7 +15,6 @@ public class Main {
             }
         }
 
-        // 가장 많이 나온 문자 찾기
         int maxCount = 0;
         char maxChar = '?';
         for (int i = 0; i < 26; i++) {
